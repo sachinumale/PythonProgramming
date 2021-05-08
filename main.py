@@ -1,16 +1,60 @@
-# This is a sample Python script.
+import numpy as np
+import sys
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+# 1. zeros : help(np.zeros)
+
+# a1=np.zeros((2,3,4),dtype=int)
+# print(a1)
+# print("-"*30)
+# print("1. Shape",a1.shape)
+# print("2. Dimentional",a1.ndim)
+# print("3. Size",a1.size)
+#---------------------------------------------------------------------------------------
+# 2. ones : help(np.ones)
+# a1=np.ones((3,2),dtype=int)
+# print(a1)
+# print("-"*30)
+# print("1. Shape",a1.shape)
+# print("2. Dimentional",a1.ndim)
+# print("3. Size",a1.size)
+#--------------------------------------------------------------------------------------
+
+# 2. full : help(np.full(shape, fill_value, dtype=None, order='C', *, like=None))
+
+# a1 = np.full((3,3),7)
+# a2 = np.full((3,3),5,dtype=float)
+# print(a1)
+# print(a2)
+# print("-"*30)
+# print("1. Shape",a1.shape)
+# print("2. Dimentional",a1.ndim)
+# print("3. Size",a1.size)
+#--------------------------------------------------------------------------------------
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+
+def get(a,b):
+    c = a
+    a = b
+    b = c
+    return a,b
+
+a,b = get(2,3)
+print(f"Before swapping a = 2 & b = 3")
+print(f"After swapping  a = {a} & b = {b}")
 
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+
+
+
+
+
+
+
+
+
+
+
+
+
